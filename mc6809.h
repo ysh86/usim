@@ -224,6 +224,8 @@ public:
 	Byte&			byterefreg(int);
 	Word&			wordrefreg(int);
 
+	Word			get_pc(){ return pc; };
+	bool			get_trace(){ return m_trace; };
 };
 
 inline void mc6809::do_br(const char *mnemonic, bool test)
